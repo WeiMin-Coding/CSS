@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*div.box > span {*/
+        /*    color: red;*/
+        /*}*/
+        /*div > p > span {*/
+        /*    color: red;*/
+        /*}*/
+        p + span + span {
+            color: chartreuse;
+        }
+        p ~ span {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        div
+        <p>
+            div -> p
+            <br>
+            <span>div -> p -> span</span>
+        </p>
+        <span>div -> span</span>
+        <span>div -> span</span>
+    </div>
+    <div>
+        <span>div -> span</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*p[title=abc] {*/
+        /*    color: orange;*/
+        /*}*/
+        p[title*=abc] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="blue abc">标题</h1>
+    <p title="abc">p1</p>
+    <p title="abcef">p2</p>
+    <p title="asdasdabc">p3</p>
+    <p>p4</p>
+    <p>p5</p>
+    <p>p6</p>
+</body>
+</html>
